@@ -10,7 +10,7 @@ Supported Pairs:
 
 Setup(Linux, windows):<br />
 You must have python installed<br />
-Open terminal<br />
+Open terminal/cmd<br />
 pip install playsound<br />
 pip install requests<br />
 python3 crypto_alert.py<br /><br />
