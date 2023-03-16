@@ -14,11 +14,11 @@ path_sound_file = "crypto_sound.wav"; # Sound which will be played
 
 def converter_type(type):
     if (type == "1"):
-        return "HIGHEST BID";
-    if (type == "2"):
-        return "HIGHEST SELL";
-    if (type == "3"):
         return "LAST TRADE";
+    if (type == "2"):
+        return "HIGHEST BUY";
+    if (type == "3"):
+        return "LOWEST SELL";
     return "";
 
 def pre_check():
