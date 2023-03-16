@@ -12,6 +12,7 @@ Setup(Linux, windows):
 You must have python installed
 Open terminal
 pip install playsound
+pip install requests
 python3 crypto_alert.py
 
 
