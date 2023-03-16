@@ -1,5 +1,5 @@
 # CryptoAlert
-Plays a sound file repeatedly when a cryptocurrency reaches target value
+Plays a sound file repeatedly when a cryptocurrency reaches target value<br />
 You can change the sound file to whatever sound you want
 
 Supported Pairs:
