@@ -13,7 +13,7 @@ You must have python installed<br />
 Open terminal<br />
 pip install playsound<br />
 pip install requests<br />
-python3 crypto_alert.py
+python3 crypto_alert.py<br /><br />
 
 
 
