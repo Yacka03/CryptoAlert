@@ -9,7 +9,7 @@ from playsound import playsound
 
 #SETTINGS:
 fetch_interval = 1; # How many seconds to wait for price update
-path_sound_file = "crypto_pump.wav"; # Sound which will be played
+path_sound_file = "crypto_sound.wav"; # Sound which will be played
 
 
 def converter_type(type):
@@ -24,7 +24,7 @@ def converter_type(type):
 def pre_check():
     global isOnTop;
     while True:
-        price = get_price(b);
+        price = get_price(moneys[b-1]);
         if (price['status'] is True):
             prices = price['data'];
             numSelected = int(a);
@@ -36,7 +36,7 @@ def pre_check():
             break;
          
         else:
-            print("Cannot fetch current kaspa prices.. Trying again.");
+            print("Cannot fetch current "+moneys[b-1] +" prices.. Trying again.");
             time.sleep(1);  
 
 def get_price(type):
@@ -136,10 +136,10 @@ while (terminated is not True):
             play_alert = True
         
         if (play_alert):
-            print ("Yeahh! Kaspa " + converter_type(a) + " reached target price of " + str(c) + " Currently: " + prices[numSelected-1])
+            print ("Yeahh! " + moneys[b-1] +" " + converter_type(a) + " reached target price of " + str(c) + " Currently: " + prices[numSelected-1])
             playsound(path_sound_file);
         else:
-            print ("Kaspa " + converter_type(a) + " Current price: " + prices[numSelected-1] + " Target price: " + str(c));
+            print (moneys[b-1]+ " " + converter_type(a) + " Current price: " + prices[numSelected-1] + " Target price: " + str(c));
     
             
         
