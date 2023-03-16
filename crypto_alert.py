@@ -40,7 +40,7 @@ def pre_check():
             time.sleep(1);  
 
 def get_price(type):
-    r = requests.get("https://tradeogre.com/api/v1/ticker/USDT-KAS");
+    r = requests.get("https://tradeogre.com/api/v1/ticker/"+type);
 
     if (r.status_code == 200):
         resp = json.loads(r.text);
