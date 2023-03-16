@@ -2,6 +2,11 @@
 Plays a sound file repeatedly when a cryptocurrency reaches target value
 You can change the sound file to whatever sound you want
 
+Supported Pairs:
+- Kaspa-BTC
+- Kaspa-USDT
+- BTC-USDT
+
 
 Setup(Linux, windows):
 You must have python installed
