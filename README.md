@@ -1,5 +1,6 @@
 # CryptoAlert
-Alerts you when a cryptocurrency reaches target value
+Plays a sound file when a cryptocurrency reaches target value
+(You can change the sound file to whatever you want(longer sounds are recommended)
 
 
 Setup(Linux, windows):
