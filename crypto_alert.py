@@ -9,7 +9,7 @@ from playsound import playsound
 
 #SETTINGS:
 fetch_interval = 1; # How many seconds to wait for price update
-path_sound_file = "crypto_sound.wav"; # Sound which will be played
+path_sound_file = ["crypto_sound.wav", "crypto_low.mp3"]; # Sound which will be played
 
 
 def converter_type(type):
@@ -137,7 +137,10 @@ while (terminated is not True):
         
         if (play_alert):
             print ("Yeahh! " + moneys[b-1] +" " + converter_type(a) + " reached target price of " + str(c) + " Currently: " + prices[numSelected-1])
-            playsound(path_sound_file);
+            if (isOnTop or len(path_sound_file) == 1):
+                playsound(path_sound_file[0]);
+            else:
+                playsound(path_sound_file[1]);
         else:
             print (moneys[b-1]+ " " + converter_type(a) + " Current price: " + prices[numSelected-1] + " Target price: " + str(c));
     
